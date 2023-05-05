@@ -1,16 +1,16 @@
-name: Dev 
+name: Dev
 
-on: 
-  push: 
+on:
+  push:
     branches: ["dev"]
 
-jobs: 
-  build: 
-    runs-on: 
-      - 'self-hosted', 
-      - 'Linux' 
-      - 'X64'
-      - 'dev-server'
+jobs:
+  build:
+    runs-on:
+      - "self-hosted"
+      - "Linux"
+      - "X64"
+      - "dev-server"
     steps:
       - uses: actions/checkout@v3
       - name: docker check version
