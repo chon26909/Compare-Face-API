@@ -28,6 +28,6 @@ def compare_faces(image1, image2):
 
     response = np.bool(result["verified"])
 
-    # print(type(response))
+    print(type(response))
 
     return response
